@@ -1,8 +1,9 @@
 <% if @answer == "I am going to work" %>
 <%= "Great ! 😁" %>
 <% elsif @answer.end_with?("?") %>
-<p style="color:green"> "Silly question, get dressed and go
- to work !" </p>
+<p style="color:green"> Silly question, get dressed and go
+ to work ! </p>
 <% else %>
-<p style="color:red"> "I don't care, get dressed and go to work !" </p>
+<p style="color:red"> I don't care, get dressed and go to work ! </p>
  <% end %>
+<%= link_to "Ask a new question", ask_path %>
